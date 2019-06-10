@@ -1,0 +1,28 @@
+﻿.pic_register
+{
+background: url(../images/register.png) no-repeat ;
+width: 139px;
+height: 99px;
+position: absolute;
+top: -143px;
+left: 720px;
+z-index: 1;
+
+
+}
+
+.div_1
+{
+position: absolute;
+background:no-repeat;
+padding: 50px;
+width:550px;
+height: 1050px;
+background-color: #FAFAFA;
+top: -110px;
+left: 130px;
+z-index: 0;
+border: #C9C9C9 solid thin;
+border-radius: 15px;
+box-shadow: 0px 0px 5px #878787;
+}

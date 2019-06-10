@@ -1,0 +1,487 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>پوشاک شهر بچه ها</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="فروشگاه آنلاين پوشاک دخترانه و پسرانه" >
+  <meta name="keywords" content="پوشاک,لباس دخترانه,لباس پسرانه,کودکان,لباس">
+  <meta name="author" content="الناز دهخوارقاني">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/pv_style.css" rel="stylesheet" type="text/css">
+  <link href="css/rp_style.css" rel="stylesheet" type="text/css">
+
+  <style>
+    .notin
+{
+  width: 130px;
+  height: 20px;
+  position:relative;
+  background-color:#FEB0A5;
+  border: thin #999999 solid;
+}
+  </style>
+
+
+    <script>
+     function reg()
+     {
+      fn=document.getElementById('fname').value;
+      ln=document.getElementById('lname').value;
+      m=document.getElementById('mail').value;
+      t=document.getElementById('tel').value;
+      mob=document.getElementById('mob').value;
+      p1=document.getElementById('pass1').value;
+      p2=document.getElementById('pass2').value;
+      postal=document.getElementById('postal').value;
+      ostan=document.getElementById('ostan').value;
+      city=document.getElementById('city').value;
+      address=document.getElementById('address').value;
+           //-----------1-----------
+
+
+          if(fn.length>5)
+    {
+      if(!(parseInt(fn)))
+      {
+        document.getElementById('fname').className="in";
+
+      }
+      }
+      else if(fn.length>0)
+      {
+       document.getElementById('fname').className="notin";
+      }
+
+           //-----------2-----------
+
+
+          if(ln.length>5)
+    {
+      if(!(parseInt(ln)))
+      {
+        document.getElementById('lname').className="in";
+
+      }
+      }
+      else if(ln.length>0)
+      {
+       document.getElementById('lname').className="notin";
+      }
+
+              //----------3------------
+
+       if(m.length>5)
+
+
+      {
+        document.getElementById('mail').className="in";
+
+      }
+      else if(m.length>0)
+      {
+       document.getElementById('mail').className="notin";
+      }
+
+               //---------4-------------
+             if(t.length>10)
+    {
+      if((parseInt(t)))
+      {
+        document.getElementById('tel').className="in";
+
+      }
+      }
+      else if(t.length>0)
+      {
+       document.getElementById('tel').className="notin";
+      }
+
+              //---------5-------------
+             if(mob.length>10)
+    {
+      if((parseInt(mob)))
+      {
+        document.getElementById('mob').className="in";
+
+      }
+      }
+      else if(mob.length>0)
+      {
+       document.getElementById('mob').className="notin";
+      }
+
+          //-----------6-----------
+
+
+       if(p1.length>5)
+    {
+      if(parseInt(p1))
+      {
+        document.getElementById('pass1').className="in";
+
+      }
+    }
+      else if(p1.length>0)
+      {
+       document.getElementById('pass1').className="notin";
+      }
+
+                //-----------7-----------
+
+
+       if(p2.length>5)
+    {
+      if(parseInt(p2) && (p1== p2))
+      {
+        document.getElementById('pass2').className="in";
+
+      }
+    }
+      else if(p2.length>0  && (p1!== p2))
+      {
+       document.getElementById('pass2').className="notin";
+      }
+
+                      //-----------8-----------
+
+
+       if(postal.length>5)
+    {
+      if(parseInt(postal))
+      {
+        document.getElementById('postal').className="in";
+
+      }
+    }
+      else if(postal.length>0)
+      {
+       document.getElementById('postal').className="notin";
+      }
+
+           //-----------9-----------
+
+
+          if(ostan.length>5)
+    {
+      if(!(parseInt(ostan)))
+      {
+        document.getElementById('ostan').className="in";
+
+      }
+      }
+      else if(ostan.length>0)
+      {
+       document.getElementById('ostan').className="notin";
+      }
+
+                 //-----------10-----------
+
+
+          if(city.length>5)
+    {
+      if(!(parseInt(city)))
+      {
+        document.getElementById('city').className="in";
+
+      }
+      }
+      else if(city.length>0)
+      {
+       document.getElementById('city').className="notin";
+      }
+
+                       //-----------11-----------
+
+
+          if(address.length>5)
+    {
+      if(!(parseInt(address)))
+      {
+        document.getElementById('address').className="in";
+
+      }
+      }
+      else if(address.length>0)
+      {
+       document.getElementById('address').className="notin";
+      }
+
+
+
+
+     }
+
+  </script>
+
+
+  <script src="javascript/js.js"></script>
+</head>
+
+<body onload="slideshow()">
+
+ <div id="main" style="height: 1783px">
+
+ <div class="notice"></div>
+
+ <div id="header">
+
+
+ <div class="logo"></div>
+
+ <div class="register">
+ <ul>
+ <li><a href="login.htm">ورود به سايت</a></li>
+ <li><a href="basket.htm">سبد خريد</a></li>
+ </ul>
+ </div>
+
+
+
+   <!--search button-->
+ <div class="search">
+ <form action="#" name="search" method="post"  autocomplete="on" target="_blank">
+ <input type="text" placeholder="Enter Keyword..." name="search_click" class="in" >
+ <input type="image" class="buttunes" src="images/search button.png"  alt="جستجو" width="25" height="25" style="top:7px;left: -3px;" title="جستجو" >
+ </form>
+ </div>
+ <!--Menu-->
+
+
+  <div class="menu">
+
+<nav>
+ <ul>
+  <li><a href="#">پشتيباني</a>
+  <ul>
+  <li><a href="branches.htm">آدرس ما</a></li>
+  <li><a href="contact_us.htm">تماس با ما</a></li>
+  </ul>
+
+  </li>
+  <li><a href="registration.htm">عضويت</a></li>
+  <li><a href="#">سرگرمي</a>
+  <ul>
+  <li><a href="online_video.htm">تماشاخانه</a></li>
+  <li><a href="online_game.htm">بازي آنلاين</a></li>
+  </ul>
+  </li>
+  <li><a href="#">سفارش</a>
+  <ul>
+  <li><a href="girls_cloth.htm">دخترانه</a></li>
+  <li><a href="boys_cloth.htm">پسرانه</a></li>
+  </ul>
+  </li>
+  <li><a href="index.htm">صفحه نخست</a></li>
+ </ul>
+ </nav>
+
+ </div>
+
+ <!--END OF Menu-->
+
+ <a href="#" target="_blank"><div class="support" onclick="support()" title="پشتيباني آنلاين"></div></a>
+ </div>
+
+<!--END OF Header-->
+<!--Start OF Content-->
+
+<hr noshade="noshade" class="hr_1">
+
+<div id="content" style="height: 1100px">
+
+<div class="pic_register"></div>
+<div class="div_1">
+<form  action="confirmation_2.html" method="post" name="reg1" target="_self" oninput="reg()">
+<p dir="rtl">
+
+تذکر:<br>
+1- پر کردن اطلاعات ستاره دار الزامی می باشد، توجه داشته باشید که اطلاعات بعد از ثبت قابل ویرایش نمی باشد لذا خواهشمند است با دقت فرم زیر را تکمیل فرمائید. <br>
+2- لطفاً اطلاعات خود را به زبان فارسی وارد نمایید.
+<br><br>
+آدرس الکترونيک:<sup style="color: #FF0000">*</sup><input id="mail"  class="in" type="email" name="email" style="width: 180px;left: -15px" required><br> <br>
+کلمه عبور:<sup style="color: #FF0000">*</sup><input id="pass1" class="in" type="password" name="password" style="width: 180px;left: -62px" required> <br>
+توجه :  براي ايجاد کلمه عبور تنها از عدد استفاده نماييد.<br>
+تکرار کلمه عبور:<sup style="color: #FF0000">*</sup><input  id="pass2" class="in" type="password" name="password" style="width: 180px;left: -39px" required> <br> <br>
+مشتري حقيقي:<input  type="radio" name="customer" style="width: 180px;left: 65px" > <br> <br>
+نام:<sup style="color: #FF0000">*</sup><input id="fname" class="in" type="text" name="fname" style="width: 180px;left: -85px" checked="checked" required> <br> <br>
+نام خانوادگي:<sup style="color: #FF0000">*</sup><input id="lname" class="in" type="text" name="lname" style="width: 180px;left: -35px" checked="checked" required> <br> <br>
+
+
+جنسيت:<sup style="color: #FF0000">*</sup>
+<select class="in" name="sex" style="width: 50px;left: -65px" checked="checked" required>
+<option value="..." selected="selected">...</option>
+<option value="زن" >زن</option>
+<option value="مرد">مرد</option>
+</select>
+
+
+
+
+<br><br>
+تاريخ تولد:<sup style="color: #FF0000">*</sup>
+<select class="in" name="date" style="width: 50px;left: -52px" required>
+
+<option value="..." selected="selected">...</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+
+</select>
+
+<select class="in" name="date" style="width: 50px;left: -62px" required>
+
+<option value="..." selected="selected">...</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+
+</select>
+    /
+<select class="in" name="date" style="width: 50px;left: -69px" required>
+
+<option value="..." selected="selected">...</option>
+<option value="1">1350</option>
+<option value="2">1351</option>
+<option value="3">1352</option>
+<option value="4">1353</option>
+<option value="5">1354</option>
+<option value="6">1355</option>
+<option value="7">1356</option>
+<option value="8">1360</option>
+<option value="9">1361</option>
+<option value="10">1362</option>
+<option value="11">1363</option>
+<option value="12">1364</option>
+<option value="13">1365</option>
+<option value="14">1366</option>
+<option value="15">1367</option>
+<option value="16">1368</option>
+<option value="17">1369</option>
+<option value="18">1370</option>
+<option value="19">1371</option>
+<option value="20">1372</option>
+<option value="21">1373</option>
+<option value="22">1374</option>
+<option value="23">1375</option>
+<option value="24">1376</option>
+<option value="25">1377</option>
+<option value="26">1378</option>
+<option value="27">1379</option>
+<option value="28">1380</option>
+
+</select>
+/
+
+
+<br><br>
+تلفن:<input id="tel" class="in" type="text" name="fname" style="width: 180px;left: -77px" > <br> <br>
+موبايل:<sup style="color: #FF0000">*</sup><input id="mob" class="in" type="text" name="fname" style="width: 180px;left: -62px"  required> <br> <br>
+کد پستي:<input  class="in" type="text" name="fname" id="postal" style="width: 180px;left: -65px"> <br> <br>
+استان:<sup style="color: #FF0000">*</sup><input  class="in" id="ostan" type="text" name="fname" style="width: 180px;left: -64px"  required> <br> <br>
+شهر:<sup style="color: #FF0000">*</sup><input  class="in" id="city" type="text" name="fname" style="width: 180px;left: -83px"  required> <br> <br>
+آدرس پستي:<sup style="color: #FF0000">*</sup><input  class="in" id="address" type="text" name="fname" style="width: 180px;left: -35px" checked="checked" required> <br> <br>
+دريافت خبرنامه:<input   type="checkbox" name="fname" style="width: 180px;left: 55px" checked="checked"> <br> <br>
+
+
+<input type="image" alt="کليد ثبت نام" name="reg" style="position: absolute;left: 300px" src="images/submitpic.png">
+
+</p>
+</form>
+</div>
+
+</div>
+
+
+ <!--Start of Footer-->
+
+<footer>
+ <div id="footer">
+
+ <p class="fp_1">راههاي تماس با ما</p>
+
+  <br><br><br><br>
+  <hr width="250px" noshade="noshade" style="position: relative; left: -300px;">
+
+ <address>
+ <p class="fp_m">نشاني : مشهد - بلوار شهيد صادقي -پلاک 13 <br> صندوق پستي : 3434-91375<br>تلفن :222111-0511 <br>info@babycity.com :ايميل </p>
+ </address>
+
+  <p class="fp_3">پشتيباني مشتريان</p>
+
+    <br><br><br><br>
+    <hr width="250px" noshade="noshade" style="position: relative; left: -250px;top:-98px;">
+
+  <p class="fp_mm"><a class="a_footer">راهنماي خريد از سايت</a><br><a class="a_footer" >فهرست شعبات</a><br><a class="a_footer">چرا خريد از ما</a><br><a class="a_footer" >پشتيباني 24 ساعته</a></p>
+
+  <p class="fp_5">به ما بپيونديد</p>
+    <br><br><br><br>
+    <hr width="250px" noshade="noshade" style="position: relative; left: -10px;top:-195px;">
+
+
+    <form action="#" name="join_us" method="post" autocomplete="on" target="_blank">
+    <input type="email" class="in" placeholder="Enter Email Address..." name="join_us_click" style="position: relative; width: 150px;height: 23.5px;top:-188px;left:38px" title="به ما بپيونديد" alt="به ما بپيونديد">
+    <input type="image" src="images/join-us.png" class="buttunes" style="top:-175px;left: 31px" title="به ما بپيونديد">
+    </form>
+
+  <div class="join">
+  <a style="width: 200px" href="http:www.facebook.com" target="_blank"><input style="float: left;margin: 3px;" type="image" src="images/facebook_old.png" title="Facebook" alt="فيسبوک"> </a>
+  <a style="width: 200px" href="https://www.plus.google.com" target="_blank"><input type="image" style="float: left; margin: 3px;" src="images/Google-plus-icon.png" title="Google+" alt="گوگل پلاس"> </a>
+  <a style="width: 200px" href="http://www.instagram.com/" target="_blank"><input type="image" style="float: left; margin: 3px;" src="images/Instagram-logo-005.png" title="Instagram" alt="اين استاگرام"></a>
+  <a style="width: 200px" href="https://www.linkedin.com/" target="_blank"><input type="image" style="float: left; margin: 3px;" src="images/linkedin.png" title="LinkedIn" alt="لينکد اين"></a>
+  <a style="width: 200px" href="https://twitter.com/" target="_blank"><input type="image" style="float: left; margin: 3px;" src="images/TwitterIcon.png" title="Twitter" alt="توييتر"> </a>
+
+  </div>
+
+ </div>
+
+ <!--End of Footer-->
+
+<p class="copyright">Copyright © 2014 Baby City All rights reserved.</p>
+
+</footer>
+
+ </div>
+ <!--END OF MAIN-->
+
+</body>
+
+</html>
